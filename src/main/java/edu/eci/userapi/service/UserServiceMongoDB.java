@@ -1,12 +1,13 @@
-package org.ada.school.service;
+package edu.eci.userapi.service;
 
-import org.ada.school.controller.user.UserDto;
-import org.ada.school.exception.UserNotFoundException;
-import org.ada.school.repository.UserRepository;
-import org.ada.school.repository.document.User;
+import edu.eci.userapi.controller.user.UserDto;
+import edu.eci.userapi.exception.UserNotFoundException;
+import edu.eci.userapi.repository.UserRepository;
+import edu.eci.userapi.repository.document.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -85,5 +86,15 @@ public class UserServiceMongoDB
             return user;
         }
         return null;
+    }
+
+    @Override
+    public List<User> findUsersWithNameOrLastNameLike(String queryText) {
+        return userRepository.findUsersWithNameOrLastNameLike(queryText);
+    }
+
+    @Override
+    public List<User> findUsersCreatedAfter(Date startDate) {
+        return userRepository.findUserDocumentByCreatedAtAfter(startDate);
     }
 }

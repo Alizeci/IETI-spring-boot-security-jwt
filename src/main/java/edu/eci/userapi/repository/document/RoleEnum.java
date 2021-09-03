@@ -1,4 +1,4 @@
-package org.ada.school.repository.document;
+package edu.eci.userapi.repository.document;
 
 
 public enum RoleEnum

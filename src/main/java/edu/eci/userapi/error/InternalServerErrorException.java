@@ -1,6 +1,6 @@
-package org.ada.school.error;
+package edu.eci.userapi.error;
 
-import org.ada.school.exception.ServerErrorResponseDto;
+import edu.eci.userapi.exception.ServerErrorResponseDto;
 import org.springframework.http.HttpStatus;
 
 public class InternalServerErrorException

@@ -1,6 +1,6 @@
-package org.ada.school.repository.document;
+package edu.eci.userapi.repository.document;
 
-import org.ada.school.controller.user.UserDto;
+import edu.eci.userapi.controller.user.UserDto;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;

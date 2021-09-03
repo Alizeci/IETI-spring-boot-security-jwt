@@ -1,7 +1,7 @@
-package org.ada.school.config;
+package edu.eci.userapi.config;
 
-import org.ada.school.error.InternalServerErrorException;
-import org.ada.school.exception.ServerErrorResponseDto;
+import edu.eci.userapi.exception.ServerErrorResponseDto;
+import edu.eci.userapi.error.InternalServerErrorException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
@@ -27,7 +27,7 @@ class RestControllerErrorHandler
     }
 
     @ExceptionHandler( InternalServerErrorException.class )
-    private ResponseEntity<ServerErrorResponseDto> handleRuntimeException( InternalServerErrorException exception )
+    private ResponseEntity<ServerErrorResponseDto> handleRuntimeException(InternalServerErrorException exception )
 
     {
         return new ResponseEntity( exception.getServerErrorResponseDto(), exception.getHttpStatus() );
