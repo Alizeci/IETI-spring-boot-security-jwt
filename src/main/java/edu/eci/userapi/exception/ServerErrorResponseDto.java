@@ -1,6 +1,6 @@
-package org.ada.school.exception;
+package edu.eci.userapi.exception;
 
-import org.ada.school.error.ErrorCodeEnum;
+import edu.eci.userapi.error.ErrorCodeEnum;
 import org.springframework.http.HttpStatus;
 
 public class ServerErrorResponseDto

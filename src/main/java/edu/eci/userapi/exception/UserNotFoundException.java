@@ -1,7 +1,7 @@
-package org.ada.school.exception;
+package edu.eci.userapi.exception;
 
-import org.ada.school.error.ErrorCodeEnum;
-import org.ada.school.error.InternalServerErrorException;
+import edu.eci.userapi.error.ErrorCodeEnum;
+import edu.eci.userapi.error.InternalServerErrorException;
 import org.springframework.http.HttpStatus;
 
 public class UserNotFoundException

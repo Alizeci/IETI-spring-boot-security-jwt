@@ -205,8 +205,8 @@ Our API Endpoints can be used by anyone that knows the URL and API structure. In
    import io.jsonwebtoken.Jwts;
    import io.jsonwebtoken.SignatureAlgorithm;
    import org.ada.school.exception.InvalidCredentialsException;
-   import org.ada.school.repository.document.User;
-   import org.ada.school.service.UserService;
+   import User;
+   import UserService;
    import org.springframework.beans.factory.annotation.Autowired;
    import org.springframework.beans.factory.annotation.Value;
    import org.springframework.security.crypto.bcrypt.BCrypt;

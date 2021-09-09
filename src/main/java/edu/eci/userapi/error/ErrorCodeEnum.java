@@ -1,4 +1,4 @@
-package org.ada.school.error;
+package edu.eci.userapi.error;
 
 public enum ErrorCodeEnum
 {

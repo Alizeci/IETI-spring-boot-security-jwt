@@ -1,4 +1,4 @@
-package org.ada.school.controller.user;
+package edu.eci.userapi.controller.user;
 
 public class UserDto
 {

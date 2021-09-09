@@ -1,11 +1,11 @@
-package org.ada.school.controller.health;
+package edu.eci.userapi.controller.health;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping( "v1/health" )
+@RequestMapping( "/v1/health" )
 public class HealthController
 {
 
