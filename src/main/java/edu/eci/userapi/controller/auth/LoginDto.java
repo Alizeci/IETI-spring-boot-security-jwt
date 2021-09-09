@@ -1,5 +1,8 @@
 package edu.eci.userapi.controller.auth;
 
+/**
+ * LoginDto is used to map the JSON send to authenticate a user: Java.
+ */
 public class LoginDto {
 
     String email;
