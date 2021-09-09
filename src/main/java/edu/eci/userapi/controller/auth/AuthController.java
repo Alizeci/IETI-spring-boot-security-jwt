@@ -8,16 +8,12 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.bcrypt.BCrypt;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Calendar;
 import java.util.Date;
 
-import static edu.eci.userapi.utils.Constants.CLAIMS_ROLES_KEY;
-import static edu.eci.userapi.utils.Constants.TOKEN_DURATION_MINUTES;
+import static edu.eci.userapi.utils.Constants.*;
 
 @RestController
 @RequestMapping( "/v1/auth" )
@@ -68,4 +64,5 @@ public class AuthController
         String token = generateToken( user, expirationDate.getTime() );
         return new TokenDto( token, expirationDate.getTime() );
     }
+
 }
