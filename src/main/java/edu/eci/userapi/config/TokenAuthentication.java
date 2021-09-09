@@ -9,8 +9,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * TokenAuthentication helps to verify the authorization token send on the request authorization header or using a Cookie.
- * AbstractAuthenticationToken facilitate the process of handling endpoints access based on user roles.
+ * TokenAuthentication facilitate the process of handling endpoints access based on user roles.
  */
 public class TokenAuthentication extends AbstractAuthenticationToken
 {
